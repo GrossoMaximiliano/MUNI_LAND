@@ -95,7 +95,7 @@
     close.addEventListener("click", function () { shut(); toggle.focus(); });
     backdrop.addEventListener("click", shut);
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && drawer.classList.contains("is-open")) { shut(); toggle.focus(); } });
-    window.addEventListener("resize", function () { if (window.innerWidth >= 1100) shut(); });
+    window.addEventListener("resize", function () { if (window.innerWidth >= 1200) shut(); });
   })();
 
   /* ---------- Componentes de render ---------- */
@@ -200,6 +200,9 @@
       .concat(S.gabinete.map(function (g) { return { t: g.area, d: "Gabinete · " + g.nombre, h: "gestion.html", i: g.icono, k: g.area + " " + g.nombre + " " + g.desc }; }))
       .concat([
         { t: "Autogestión: pagar tasas online", d: "Portal de servicios", h: S.muni.autogestion, i: "fa-user-shield", k: "pagar pago tasas boleta deuda online autogestion portal" },
+        { t: "Capacitaciones gratuitas con certificado", d: "Plataforma de Capacitaciones", h: S.muni.cursos, i: "fa-graduation-cap", k: "curso cursos capacitacion capacitarme aprender certificado oficio taller gratis electricidad costura programacion" },
+        { t: "Empleo Local: ofertas y oficios", d: "Plataforma de empleo", h: S.muni.empleo, i: "fa-briefcase", k: "empleo trabajo laburo oficio oficios profesional albañil electricista plomero carpintero busqueda personal empresa cv perfil" },
+        { t: "Trabajo y capacitación", d: "Programa municipal", h: "trabajo.html", i: "fa-people-arrows", k: "trabajo empleo capacitacion oficios empresas comercios" },
         { t: "Teléfonos útiles y emergencias", d: "Contacto", h: "contacto.html#telefonos", i: "fa-phone", k: "telefono emergencia bomberos policia hospital epe luz" },
         { t: "Ordenanzas, decretos y balances", d: "Transparencia", h: "transparencia.html", i: "fa-scale-balanced", k: "ordenanza decreto balance digesto presupuesto transparencia" },
         { t: "Turismo en Las Toscas", d: "Turismo", h: "turismo.html", i: "fa-tree", k: "turismo pesca hospedaje gastronomia jaaukanigas isla rio" }

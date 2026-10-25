@@ -13,6 +13,8 @@ window.SITE = {
     email: "intendencia@lastoscas.gob.ar",
     horario: "Lunes a viernes de 7:00 a 13:00 hs",
     autogestion: "https://grossomaximiliano.github.io/MUNI_POC",
+    cursos: "https://grossomaximiliano.github.io/MUNI_CURSOS/",
+    empleo: "https://grossomaximiliano.github.io/MUNI_EMPLE/",
     mapa: "https://www.google.com/maps?q=Calle+12+901,+Las+Toscas,+Santa+Fe,+Argentina&output=embed",
     mapaLink: "https://www.google.com/maps/search/?api=1&query=Municipalidad+de+Las+Toscas+Santa+Fe",
     redes: {

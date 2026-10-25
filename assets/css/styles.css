@@ -157,7 +157,7 @@ ul, ol { margin: 0; padding: 0; }
 .nav { display: none; }
 .nav__list { list-style: none; display: flex; align-items: center; gap: 2px; }
 .nav__link {
-  position: relative; display: block; padding: 10px 12px; border-radius: 8px;
+  position: relative; display: block; padding: 10px 11px; border-radius: 8px;
   font-family: var(--font-head); font-size: .88rem; font-weight: 600; color: var(--ink-700);
 }
 .nav__link:hover { color: var(--blue-600); background: var(--sky-50); }
@@ -169,7 +169,8 @@ ul, ol { margin: 0; padding: 0; }
   display: inline-grid; place-items: center; width: 46px; height: 46px; border-radius: 12px;
   border: 1px solid var(--line); background: var(--surface); color: var(--navy-800); font-size: 1.15rem;
 }
-@media (min-width: 1100px) {
+.brand { flex: none; }
+@media (min-width: 1200px) {
   .nav { display: block; }
   .header__cta { display: inline-flex; }
   .nav-toggle { display: none; }
@@ -246,7 +247,7 @@ button.chip { cursor: pointer; }
 /* ---------- 6. Accesos rápidos ---------- */
 .quick-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
 @media (min-width: 700px) { .quick-grid { grid-template-columns: repeat(3, 1fr); } }
-@media (min-width: 1100px) { .quick-grid { grid-template-columns: repeat(6, 1fr); } }
+@media (min-width: 1100px) { .quick-grid { grid-template-columns: repeat(4, 1fr); } }
 .quick {
   display: flex; flex-direction: column; align-items: flex-start; gap: 14px; padding: 22px 18px; border-radius: var(--radius);
   background: var(--surface); border: 1px solid var(--line); color: var(--ink-900); transition: transform .25s var(--ease), box-shadow .25s, border-color .25s;
@@ -358,6 +359,41 @@ button.chip { cursor: pointer; }
 .banner__body { position: relative; padding: clamp(24px, 5vw, 56px); max-width: 680px; }
 .banner__body h2 { color: #fff; }
 .banner__body p { color: #d3e1ef; }
+
+/* Plataformas de trabajo y capacitación */
+.platforms { display: grid; gap: 24px; }
+@media (min-width: 900px) { .platforms { grid-template-columns: 1fr 1fr; } }
+.platform {
+  position: relative; overflow: hidden; display: flex; flex-direction: column;
+  padding: clamp(26px, 4vw, 40px); border-radius: var(--radius-lg); color: #dce7f3;
+  background: linear-gradient(150deg, var(--navy-700) 0%, var(--navy-900) 100%);
+  box-shadow: var(--shadow); transition: transform .3s var(--ease), box-shadow .3s;
+}
+.platform:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.platform--empleo { background: linear-gradient(150deg, var(--blue-600) 0%, var(--navy-800) 100%); }
+.platform::after { content: ""; position: absolute; right: -70px; top: -70px; width: 240px; height: 240px; border-radius: 50%; border: 40px solid rgba(255, 255, 255, .05); pointer-events: none; }
+.platform__icon { display: grid; place-items: center; width: 60px; height: 60px; border-radius: 16px; background: var(--gold-500); color: var(--navy-900); font-size: 1.5rem; margin-bottom: 20px; }
+.platform__tag { font-family: var(--font-head); font-size: .74rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--sky-400); margin-bottom: 8px; }
+.platform h3 { color: #fff; font-size: clamp(1.35rem, 2.4vw, 1.7rem); margin-bottom: 12px; }
+.platform p { color: #c7d7e8; }
+.platform__list { list-style: none; display: grid; gap: 10px; margin: 6px 0 28px; }
+.platform__list li { display: flex; gap: 12px; align-items: flex-start; font-size: .95rem; }
+.platform__list i { color: var(--gold-500); margin-top: 5px; width: 16px; text-align: center; }
+.platform__actions { margin-top: auto; display: flex; flex-wrap: wrap; gap: 10px; }
+.platform__badge { position: absolute; top: 22px; right: 22px; z-index: 1; padding: 6px 12px; border-radius: 999px; background: rgba(255, 255, 255, .12); border: 1px solid rgba(255, 255, 255, .2); color: #fff; font-size: .74rem; font-weight: 700; }
+
+.steps { display: grid; gap: 18px; counter-reset: step; }
+@media (min-width: 700px) { .steps { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px) { .steps { grid-template-columns: repeat(4, 1fr); } }
+.step { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px 22px 22px; }
+.step::before {
+  counter-increment: step; content: counter(step);
+  display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; margin-bottom: 16px;
+  background: var(--navy-800); color: #fff; font-family: var(--font-head); font-weight: 800;
+}
+.step i { position: absolute; top: 26px; right: 22px; font-size: 1.4rem; color: var(--sky-400); }
+.step h3 { font-size: 1.05rem; }
+.step p { font-size: .92rem; color: var(--ink-500); margin: 0; }
 
 /* ---------- 8. Encabezado de páginas internas ---------- */
 .page-hero { position: relative; color: #fff; background: var(--navy-800); overflow: hidden; }

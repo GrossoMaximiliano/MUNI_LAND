@@ -11,6 +11,7 @@
     { id: "inicio", label: "Inicio", href: "index.html", icon: "fa-house" },
     { id: "gestion", label: "Gestión", href: "gestion.html", icon: "fa-landmark" },
     { id: "tramites", label: "Trámites", href: "tramites.html", icon: "fa-file-lines" },
+    { id: "trabajo", label: "Trabajo", href: "trabajo.html", icon: "fa-briefcase" },
     { id: "noticias", label: "Noticias", href: "noticias.html", icon: "fa-newspaper" },
     { id: "transparencia", label: "Transparencia", href: "transparencia.html", icon: "fa-scale-balanced" },
     { id: "turismo", label: "Turismo", href: "turismo.html", icon: "fa-tree" },
@@ -97,6 +98,8 @@
           '<li><a href="' + S.muni.autogestion + '" target="_blank" rel="noopener">Autogestión</a></li>' +
           '<li><a href="tramites.html">Guía de trámites</a></li>' +
           '<li><a href="tramites.html#pago-tasas">Pago de tasas</a></li>' +
+          '<li><a href="' + S.muni.cursos + '" target="_blank" rel="noopener">Capacitaciones gratuitas</a></li>' +
+          '<li><a href="' + S.muni.empleo + '" target="_blank" rel="noopener">Empleo Local</a></li>' +
           '<li><a href="contacto.html#formulario">Reclamos y consultas</a></li>' +
           '<li><a href="transparencia.html">Ordenanzas y decretos</a></li>' +
           '<li><a href="contacto.html#telefonos">Teléfonos útiles</a></li>' +
