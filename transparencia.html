@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es-AR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Transparencia y Gobierno Abierto | Municipalidad de Las Toscas</title>
+  <meta name="description" content="Ordenanzas, decretos, balances y presupuesto de la Municipalidad de Las Toscas.">
+  <meta name="theme-color" content="#0b2a4a">
+  <meta property="og:title" content="Transparencia | Municipalidad de Las Toscas">
+  <link rel="icon" type="image/png" href="assets/img/escudo-256.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="transparencia">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <ol class="breadcrumb"><li><a href="index.html">Inicio</a></li><li aria-current="page">Transparencia</li></ol>
+        <h1>Gobierno Abierto</h1>
+        <p>Información pública al alcance de todos: normativa municipal, actos de gobierno y estado de las cuentas.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="tabs" id="docTabs" role="tablist" aria-label="Tipo de documento"></div>
+        <div class="toolbar">
+          <div class="search-input">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <label class="sr-only" for="docSearch">Buscar documento</label>
+            <input id="docSearch" type="search" placeholder="Buscar por número, año o palabra clave…" autocomplete="off">
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th scope="col">Número</th><th scope="col">Descripción</th><th scope="col">Fecha</th><th scope="col" class="actions"><span class="sr-only">Acciones</span></th></tr></thead>
+            <tbody id="docBody"></tbody>
+          </table>
+        </div>
+        <div class="empty" id="docEmpty" hidden></div>
+      </div>
+    </section>
+
+    <section class="section section--white section--tight">
+      <div class="container grid grid--3">
+        <div class="card reveal">
+          <span class="card__icon"><i class="fa-solid fa-file-circle-question"></i></span>
+          <h3>Acceso a la información</h3>
+          <p>Si no encontrás un documento, podés solicitarlo por escrito en Mesa de Entradas o desde el <a href="contacto.html?tipo=informacion#formulario">formulario de contacto</a>.</p>
+        </div>
+        <div class="card reveal">
+          <span class="card__icon"><i class="fa-solid fa-coins"></i></span>
+          <h3>Cuentas claras</h3>
+          <p>Los balances trimestrales se publican para que cualquier vecino pueda conocer cómo se administran los recursos.</p>
+        </div>
+        <div class="card reveal">
+          <span class="card__icon"><i class="fa-solid fa-landmark-dome"></i></span>
+          <h3>Concejo Municipal</h3>
+          <p>Las ordenanzas sancionadas por el Concejo Municipal se incorporan al digesto una vez promulgadas.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

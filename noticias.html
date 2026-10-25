@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es-AR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Noticias | Municipalidad de Las Toscas</title>
+  <meta name="description" content="Noticias oficiales y novedades de la Municipalidad de Las Toscas, Santa Fe.">
+  <meta name="theme-color" content="#0b2a4a">
+  <meta property="og:title" content="Noticias | Municipalidad de Las Toscas">
+  <meta property="og:image" content="assets/img/isla-del-medio.jpg">
+  <link rel="icon" type="image/png" href="assets/img/escudo-256.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="noticias">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <img src="assets/img/foto-1.jpg" alt="">
+      <div class="container">
+        <ol class="breadcrumb"><li><a href="index.html">Inicio</a></li><li><a href="noticias.html">Noticias</a></li><li aria-current="page" id="crumbCurrent">Todas</li></ol>
+        <h1 id="pageTitle">Portal de Noticias</h1>
+        <p id="pageLead">Mantenete informado con las últimas novedades y avances de nuestra ciudad.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div id="newsIndex">
+          <div class="filters" id="newsFilters" role="group" aria-label="Filtrar por categoría" style="margin-bottom:28px"></div>
+          <div class="grid grid--3" id="newsList" aria-live="polite"></div>
+          <nav class="pagination" id="newsPager" aria-label="Paginación"></nav>
+        </div>
+        <div id="newsDetail" hidden></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es-AR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Municipalidad de Las Toscas | Sitio Oficial</title>
+  <meta name="description" content="Sitio oficial de la Municipalidad de Las Toscas, Provincia de Santa Fe. Trámites, noticias, gobierno abierto, turismo y atención al ciudadano.">
+  <meta name="theme-color" content="#0b2a4a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Municipalidad de Las Toscas">
+  <meta property="og:description" content="Trámites, noticias, transparencia y servicios para vecinos de Las Toscas, Santa Fe.">
+  <meta property="og:image" content="assets/img/foto-2.jpg">
+  <link rel="icon" type="image/png" href="assets/img/escudo-256.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="inicio">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-label="Presentación">
+      <div class="hero__slides" aria-hidden="true">
+        <div class="hero__slide is-active"><img src="assets/img/foto-2.jpg" alt=""></div>
+        <div class="hero__slide"><img src="assets/img/isla-del-medio.jpg" alt=""></div>
+        <div class="hero__slide"><img src="assets/img/foto-1.jpg" alt=""></div>
+        <div class="hero__slide"><img src="assets/img/foto-3.jpg" alt=""></div>
+      </div>
+      <div class="container hero__content">
+        <span class="hero__badge"><i class="fa-solid fa-star"></i>Sitio oficial · Provincia de Santa Fe</span>
+        <h1>Una ciudad que crece <em>con su gente</em></h1>
+        <p class="hero__lead">Bienvenidos a la Municipalidad de Las Toscas. Trámites, servicios e información pública, en un solo lugar y al alcance de todos los vecinos.</p>
+        <div class="hero__actions">
+          <a class="btn btn--gold" href="tramites.html"><i class="fa-solid fa-file-lines"></i>Guía de trámites</a>
+          <a class="btn btn--ghost-light" href="https://grossomaximiliano.github.io/MUNI_POC" target="_blank" rel="noopener"><i class="fa-solid fa-user-shield"></i>Ingresar a Autogestión</a>
+        </div>
+      </div>
+      <div class="hero__controls">
+        <div class="hero__dots"></div>
+        <button class="hero__arrow hero__arrow--prev" type="button" aria-label="Imagen anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="hero__arrow hero__arrow--next" type="button" aria-label="Imagen siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <!-- BUSCADOR -->
+    <section class="finder" aria-label="Buscador">
+      <div class="container">
+        <div class="finder__card">
+          <label class="finder__label" for="finderInput">¿Qué necesitás hacer hoy?</label>
+          <div class="finder__field">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <input class="finder__input" id="finderInput" type="search" autocomplete="off" placeholder="Buscá trámites, noticias, áreas… ej: licencia, tasas, habilitación"
+                   role="combobox" aria-expanded="false" aria-controls="finderResults" aria-autocomplete="list">
+            <ul class="finder__results" id="finderResults" role="listbox"></ul>
+          </div>
+          <div class="finder__tags">
+            <span>Más buscados:</span>
+            <button class="chip" type="button" data-finder="licencia">Licencia de conducir</button>
+            <button class="chip" type="button" data-finder="tasas">Pago de tasas</button>
+            <button class="chip" type="button" data-finder="habilitación">Habilitación comercial</button>
+            <button class="chip" type="button" data-finder="reclamo">Reclamos</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCESOS RÁPIDOS -->
+    <section class="section section--tight" aria-labelledby="t-accesos">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Servicios al vecino</span>
+          <h2 id="t-accesos">Accesos rápidos</h2>
+        </div>
+        <div class="quick-grid">
+          <a class="quick quick--featured reveal" href="https://grossomaximiliano.github.io/MUNI_POC" target="_blank" rel="noopener">
+            <span class="quick__icon"><i class="fa-solid fa-user-shield"></i></span>
+            <span class="quick__title">Autogestión</span><span class="quick__desc">Tu cuenta municipal online</span>
+          </a>
+          <a class="quick reveal" href="tramites.html#pago-tasas">
+            <span class="quick__icon"><i class="fa-solid fa-file-invoice-dollar"></i></span>
+            <span class="quick__title">Pagar tasas</span><span class="quick__desc">TGI, boletas y deuda</span>
+          </a>
+          <a class="quick reveal" href="tramites.html">
+            <span class="quick__icon"><i class="fa-solid fa-list-check"></i></span>
+            <span class="quick__title">Guía de trámites</span><span class="quick__desc">Requisitos y formularios</span>
+          </a>
+          <a class="quick reveal" href="contacto.html?tipo=reclamo#formulario">
+            <span class="quick__icon"><i class="fa-solid fa-bullhorn"></i></span>
+            <span class="quick__title">Reclamos</span><span class="quick__desc">Alumbrado, residuos, calles</span>
+          </a>
+          <a class="quick reveal" href="transparencia.html">
+            <span class="quick__icon"><i class="fa-solid fa-scale-balanced"></i></span>
+            <span class="quick__title">Transparencia</span><span class="quick__desc">Ordenanzas y balances</span>
+          </a>
+          <a class="quick reveal" href="turismo.html">
+            <span class="quick__icon"><i class="fa-solid fa-tree"></i></span>
+            <span class="quick__title">Turismo</span><span class="quick__desc">Naturaleza y humedal</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTICIAS -->
+    <section class="section section--white" aria-labelledby="t-noticias">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <span class="eyebrow">Actualidad</span>
+            <h2 id="t-noticias" class="mb-0">Últimas noticias</h2>
+          </div>
+          <a class="btn btn--outline" href="noticias.html">Ver todas las noticias <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <a class="news-feature reveal" href="noticias.html?id=isla-del-medio-area-protegida">
+          <div class="news-feature__media"><img src="assets/img/isla-del-medio.jpg" alt="Vista aérea de la Isla del Medio y el río"></div>
+          <div class="news-feature__body">
+            <span class="eyebrow">Destacada · Turismo</span>
+            <h3>La Isla del Medio fue declarada Área Natural Protegida de Interés Ecológico y Turístico</h3>
+            <p class="muted">A través de la Ordenanza Nº 026/2026, aprobada por el Concejo Municipal, se reconoce el valor ambiental y turístico de uno de los paisajes más representativos de nuestro humedal.</p>
+            <span class="link-arrow">Leer noticia completa <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <div class="grid grid--3 mt-4" data-news="3" data-news-skip="1"></div>
+      </div>
+    </section>
+
+    <!-- INTENDENTE -->
+    <section class="section" aria-labelledby="t-intendente">
+      <div class="container mayor">
+        <div class="mayor__portrait reveal">
+          <img class="mayor__crest" src="assets/img/escudo.png" alt="">
+          <div class="mayor__plate"><strong>Iván Sánchez</strong><span>Intendente Municipal</span></div>
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">Mensaje del Intendente</span>
+          <h2 id="t-intendente">Una gestión cercana, moderna y transparente</h2>
+          <blockquote class="quote">“Queremos una Municipalidad que esté al servicio de cada vecino: que resuelva rápido, que rinda cuentas y que proyecte a Las Toscas hacia el futuro sin perder su identidad.”</blockquote>
+          <div class="mayor__pillars">
+            <span class="pillar"><i class="fa-solid fa-laptop"></i>Modernización</span>
+            <span class="pillar"><i class="fa-solid fa-eye"></i>Transparencia</span>
+            <span class="pillar"><i class="fa-solid fa-people-group"></i>Desarrollo humano</span>
+            <span class="pillar"><i class="fa-solid fa-road"></i>Obra pública</span>
+          </div>
+          <div class="flex-gap">
+            <a class="btn btn--primary" href="gestion.html"><i class="fa-solid fa-sitemap"></i>Conocé el gabinete</a>
+            <a class="btn btn--outline" href="mailto:intendencia@lastoscas.gob.ar"><i class="fa-regular fa-envelope"></i>Escribir a Intendencia</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRÁMITES DESTACADOS -->
+    <section class="section section--white" aria-labelledby="t-tramites">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <span class="eyebrow">Gestión ciudadana</span>
+            <h2 id="t-tramites" class="mb-0">Trámites más consultados</h2>
+          </div>
+          <a class="btn btn--outline" href="tramites.html">Ver guía completa <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="grid grid--3" data-tramites-featured="licencia-conducir,habilitacion-comercial,pago-tasas"></div>
+      </div>
+    </section>
+
+    <!-- CIFRAS -->
+    <section class="section section--navy section--tight" aria-labelledby="t-cifras">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">Las Toscas en números</span>
+          <h2 id="t-cifras">Una ciudad conectada con su gente y su entorno</h2>
+        </div>
+        <div class="stats">
+          <div class="stat reveal"><div class="stat__num"><span data-count="7">0</span></div><div class="stat__label">Secretarías al servicio del vecino</div></div>
+          <div class="stat reveal"><div class="stat__num"><span data-count="10">0</span><small>+</small></div><div class="stat__label">Trámites con guía online</div></div>
+          <div class="stat reveal"><div class="stat__num"><span data-count="24">0</span><small>hs</small></div><div class="stat__label">Autogestión disponible todos los días</div></div>
+          <div class="stat reveal"><div class="stat__num"><span data-count="492000">0</span><small>ha</small></div><div class="stat__label">Sitio Ramsar Jaaukanigás</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOBIERNO ABIERTO -->
+    <section class="section" aria-labelledby="t-gob">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Transparencia</span>
+          <h2 id="t-gob">Gobierno Abierto</h2>
+          <p class="lead">Accedé a la normativa municipal y a la información económica de la gestión.</p>
+        </div>
+        <div class="open-gov">
+          <div class="card reveal">
+            <span class="card__icon"><i class="fa-solid fa-gavel"></i></span>
+            <h3>Ordenanzas</h3>
+            <ul class="doc-list">
+              <li><a class="doc-item" href="https://lastoscas.gob.ar/wp/wp-content/uploads/2026/10/ORDENANZA-1450.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i><span><b>ORD. N° 1450/2026</b>Ordenanza municipal</span></a></li>
+              <li><a class="doc-item" href="transparencia.html#ordenanzas"><i class="fa-solid fa-file-lines"></i><span><b>ORD. N° 026/2026</b>Isla del Medio, Área Natural Protegida</span></a></li>
+            </ul>
+            <a class="link-arrow" href="transparencia.html#ordenanzas">Ver todas <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="card reveal">
+            <span class="card__icon"><i class="fa-solid fa-stamp"></i></span>
+            <h3>Decretos</h3>
+            <ul class="doc-list">
+              <li><a class="doc-item" href="https://lastoscas.gob.ar/wp/wp-content/uploads/2026/10/Decreto-1255.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i><span><b>DEC. N° 1255/2026</b>Decreto del Departamento Ejecutivo</span></a></li>
+            </ul>
+            <a class="link-arrow" href="transparencia.html#decretos">Ver todos <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="card reveal">
+            <span class="card__icon"><i class="fa-solid fa-chart-pie"></i></span>
+            <h3>Balances</h3>
+            <ul class="doc-list">
+              <li><a class="doc-item" href="https://lastoscas.gob.ar/wp/wp-content/uploads/2026/04/BALANCE-2DO-TRIMESTRE.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i><span><b>2° TRIMESTRE 2026</b>Balance trimestral</span></a></li>
+              <li><a class="doc-item" href="https://lastoscas.gob.ar/wp/wp-content/uploads/2026/04/BALANCE-1ER-TRIMESTRE.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i><span><b>1° TRIMESTRE 2026</b>Balance trimestral</span></a></li>
+            </ul>
+            <a class="link-arrow" href="transparencia.html#balances">Ver todos <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TURISMO -->
+    <section class="section section--white" aria-label="Turismo">
+      <div class="container">
+        <div class="banner reveal">
+          <img src="assets/img/isla-del-medio.jpg" alt="" loading="lazy">
+          <div class="banner__body">
+            <span class="eyebrow" style="color:var(--gold-500)">Descubrí Las Toscas</span>
+            <h2>Naturaleza, río y la magia del humedal</h2>
+            <p>Navegá los brazos del Paraná en el corazón del sitio Ramsar Jaaukanigás, disfrutá de la pesca deportiva y recorré una ciudad tranquila y arbolada.</p>
+            <a class="btn btn--gold" href="turismo.html"><i class="fa-solid fa-compass"></i>Planificá tu visita</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TELÉFONOS -->
+    <section class="section section--tint" aria-labelledby="t-tel">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <span class="eyebrow">Atención rápida</span>
+            <h2 id="t-tel" class="mb-0">Números útiles y emergencias</h2>
+          </div>
+          <a class="btn btn--outline" href="contacto.html#telefonos">Ver todos los teléfonos <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="phones" data-phones="all"></div>
+      </div>
+    </section>
+
+    <!-- CONTACTO + MAPA -->
+    <section class="section section--white" aria-labelledby="t-contacto">
+      <div class="container two-col">
+        <div>
+          <span class="eyebrow">Estamos para ayudarte</span>
+          <h2 id="t-contacto">Atención al Ciudadano</h2>
+          <div class="contact-item"><span class="contact-item__icon"><i class="fa-solid fa-location-dot"></i></span><div><b>Palacio Municipal</b><span>Calle 12 N° 901, Las Toscas, Santa Fe</span></div></div>
+          <div class="contact-item"><span class="contact-item__icon"><i class="fa-solid fa-phone"></i></span><div><b>Teléfono</b><a href="tel:03482492000">(03482) 492-000</a></div></div>
+          <div class="contact-item"><span class="contact-item__icon"><i class="fa-solid fa-envelope"></i></span><div><b>Correo electrónico</b><a href="mailto:intendencia@lastoscas.gob.ar">intendencia@lastoscas.gob.ar</a></div></div>
+          <div class="contact-item"><span class="contact-item__icon"><i class="fa-regular fa-clock"></i></span><div><b>Horario de atención</b><span>Lunes a viernes de 7:00 a 13:00 hs</span></div></div>
+          <a class="btn btn--primary mt-2" href="contacto.html#formulario"><i class="fa-solid fa-paper-plane"></i>Enviar una consulta</a>
+        </div>
+        <div class="map reveal">
+          <iframe src="https://www.google.com/maps?q=Calle+12+901,+Las+Toscas,+Santa+Fe,+Argentina&output=embed" title="Mapa: ubicación del Palacio Municipal de Las Toscas" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es-AR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Municipalidad de Las Toscas</title>
+  <meta name="description" content="Atención al ciudadano, directorio de secretarías, teléfonos útiles y formulario de consultas y reclamos de la Municipalidad de Las Toscas.">
+  <meta name="theme-color" content="#0b2a4a">
+  <meta property="og:title" content="Contacto | Municipalidad de Las Toscas">
+  <link rel="icon" type="image/png" href="assets/img/escudo-256.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="contacto">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <ol class="breadcrumb"><li><a href="index.html">Inicio</a></li><li aria-current="page">Contacto</li></ol>
+        <h1>Atención al Ciudadano</h1>
+        <p>Estamos para ayudarte. Escribinos, llamanos o acercate al Palacio Municipal.</p>
+      </div>
+    </section>
+
+    <section class="section" id="formulario" aria-labelledby="t-form">
+      <div class="container contact-grid">
+        <div>
+          <div class="card">
+            <h2 style="font-size:1.4rem">Datos de contacto</h2>
+            <div class="contact-item"><span class="contact-item__icon"><i class="fa-solid fa-location-dot"></i></span><div><b>Palacio Municipal</b><span>Calle 12 N° 901, Las Toscas, Santa Fe</span></div></div>
+            <div class="contact-item"><span class="contact-item__icon"><i class="fa-solid fa-phone"></i></span><div><b>Teléfono</b><a href="tel:03482492000">(03482) 492-000</a></div></div>
+            <div class="contact-item"><span class="contact-item__icon"><i class="fa-solid fa-envelope"></i></span><div><b>Correo electrónico</b><a href="mailto:intendencia@lastoscas.gob.ar">intendencia@lastoscas.gob.ar</a></div></div>
+            <div class="contact-item"><span class="contact-item__icon"><i class="fa-regular fa-clock"></i></span><div><b>Horario de atención</b><span>Lunes a viernes de 7:00 a 13:00 hs</span></div></div>
+          </div>
+          <div class="map mt-3">
+            <iframe src="https://www.google.com/maps?q=Calle+12+901,+Las+Toscas,+Santa+Fe,+Argentina&output=embed" title="Mapa: ubicación del Palacio Municipal de Las Toscas" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="eyebrow">Consultas y reclamos</span>
+          <h2 id="t-form" style="font-size:1.6rem">Envianos tu mensaje</h2>
+          <p class="muted">Completá el formulario y el área correspondiente te responderá a la brevedad.</p>
+
+          <form class="form" id="contactForm" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label for="f-nombre">Nombre y apellido <span class="req">*</span></label>
+                <input id="f-nombre" name="nombre" type="text" autocomplete="name">
+                <span class="field__error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="f-dni">DNI</label>
+                <input id="f-dni" name="dni" type="text" inputmode="numeric" autocomplete="off">
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="field">
+                <label for="f-email">Correo electrónico <span class="req">*</span></label>
+                <input id="f-email" name="email" type="email" autocomplete="email">
+                <span class="field__error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="f-tel">Teléfono</label>
+                <input id="f-tel" name="telefono" type="tel" autocomplete="tel">
+                <span class="field__error" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="field">
+                <label for="f-tipo">Motivo <span class="req">*</span></label>
+                <select id="f-tipo" name="tipo">
+                  <option value="">Seleccioná una opción</option>
+                  <option value="consulta">Consulta general</option>
+                  <option value="reclamo">Reclamo (alumbrado, residuos, calles)</option>
+                  <option value="tramite">Consulta sobre un trámite</option>
+                  <option value="informacion">Solicitud de información pública</option>
+                  <option value="sugerencia">Sugerencia</option>
+                </select>
+                <span class="field__error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="f-area">Área</label>
+                <select id="f-area" name="area">
+                  <option value="">No sé / General</option>
+                  <option>Secretaría General</option>
+                  <option>Planificación Económica</option>
+                  <option>Planificación y Desarrollo Territorial</option>
+                  <option>Obras Públicas</option>
+                  <option>Desarrollo Productivo</option>
+                  <option>Desarrollo Humano</option>
+                  <option>Recreación y Deporte</option>
+                  <option>Patrimonio y Comunicación</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-dir">Dirección del reclamo (si corresponde)</label>
+              <input id="f-dir" name="direccion" type="text" placeholder="Calle, número o referencia">
+            </div>
+            <div class="field">
+              <label for="f-msg">Mensaje <span class="req">*</span></label>
+              <textarea id="f-msg" name="mensaje" placeholder="Contanos en detalle tu consulta o reclamo"></textarea>
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label class="check"><input type="checkbox" name="acepto"> Acepto que la Municipalidad utilice mis datos sólo para responder esta consulta.</label>
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+            <button class="btn btn--primary" type="submit"><i class="fa-solid fa-paper-plane"></i>Enviar consulta</button>
+            <p class="form__note">Los campos marcados con <span style="color:var(--red-600)">*</span> son obligatorios.</p>
+          </form>
+
+          <div class="alert alert--success" id="formSuccess" hidden tabindex="-1">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <strong>¡Gracias! Recibimos tu mensaje.</strong><br>
+              Tu número de seguimiento es <strong id="ticketNro"></strong>. Te responderemos por correo electrónico.
+              <br><button class="btn btn--outline btn--sm mt-2" type="button" id="formAgain">Enviar otra consulta</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white" id="telefonos" aria-labelledby="t-tel">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Atención rápida</span>
+          <h2 id="t-tel">Teléfonos útiles y emergencias</h2>
+          <p class="lead">Tocá un número para llamar directamente desde tu celular.</p>
+        </div>
+        <div class="phones" data-phones="all"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="t-dir">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Directorio</span>
+          <h2 id="t-dir">Correos de cada área</h2>
+        </div>
+        <ul class="dir-list" data-directorio></ul>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

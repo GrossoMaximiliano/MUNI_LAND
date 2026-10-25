@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es-AR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guía de Trámites | Municipalidad de Las Toscas</title>
+  <meta name="description" content="Requisitos, horarios, costos y formularios de los trámites de la Municipalidad de Las Toscas.">
+  <meta name="theme-color" content="#0b2a4a">
+  <meta property="og:title" content="Guía de Trámites | Municipalidad de Las Toscas">
+  <link rel="icon" type="image/png" href="assets/img/escudo-256.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="tramites">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <ol class="breadcrumb"><li><a href="index.html">Inicio</a></li><li aria-current="page">Trámites</li></ol>
+        <h1>Guía de Trámites</h1>
+        <p>Encontrá requisitos, lugar, horarios y formularios de cada trámite municipal. Muchos podés iniciarlos online desde Autogestión.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="toolbar">
+          <div class="search-input">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <label class="sr-only" for="tramitesSearch">Buscar trámite</label>
+            <input id="tramitesSearch" type="search" placeholder="Buscar trámite… ej: licencia, planos, libre deuda" autocomplete="off">
+          </div>
+          <a class="btn btn--primary" href="https://grossomaximiliano.github.io/MUNI_POC" target="_blank" rel="noopener"><i class="fa-solid fa-user-shield"></i>Autogestión</a>
+        </div>
+        <div class="filters" id="tramitesFilters" role="group" aria-label="Filtrar por categoría"></div>
+        <p class="result-count mt-2" id="tramitesCount" aria-live="polite"></p>
+        <div class="accordion" id="tramitesList"></div>
+      </div>
+    </section>
+
+    <section class="section section--white section--tight">
+      <div class="container grid grid--3">
+        <div class="card reveal">
+          <span class="card__icon"><i class="fa-solid fa-building-columns"></i></span>
+          <h3>Mesa de Entradas</h3>
+          <p>Calle 12 N° 901 — Palacio Municipal.<br>Lunes a viernes de 7:00 a 12:30 hs.</p>
+        </div>
+        <div class="card reveal">
+          <span class="card__icon"><i class="fa-solid fa-laptop"></i></span>
+          <h3>Trámites online</h3>
+          <p>Consultá tu deuda, descargá boletas y pagá tasas desde el portal de Autogestión, las 24 horas.</p>
+        </div>
+        <div class="card reveal">
+          <span class="card__icon"><i class="fa-solid fa-headset"></i></span>
+          <h3>¿Tenés dudas?</h3>
+          <p>Llamá al <a href="tel:03482492000">(03482) 492-000</a> o escribinos desde el <a href="contacto.html#formulario">formulario de contacto</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
