@@ -113,7 +113,7 @@
       '</div>' +
       '<div class="footer__bottom"><div class="container">' +
         '<span>© ' + year + ' Municipalidad de Las Toscas — Provincia de Santa Fe. Todos los derechos reservados.</span>' +
-        '<span>Maqueta de presentación · contenidos de ejemplo sujetos a validación</span>' +
+        '<span>Maqueta de presentación · Fotos: Paralelo 28 y Wikimedia Commons (CC BY-SA / CC0)</span>' +
       '</div></div>' +
     '</footer>' +
     '<button class="to-top" type="button" id="toTop" aria-label="Volver arriba"><i class="fa-solid fa-arrow-up"></i></button>' +

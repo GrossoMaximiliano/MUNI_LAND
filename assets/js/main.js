@@ -133,10 +133,24 @@
     '</article>';
   }
 
+  var featured = sorted.filter(function (n) { return n.destacada; })[0] || sorted[0];
+  $$("[data-news-feature]").forEach(function (el) {
+    var n = featured;
+    el.href = "noticias.html?id=" + n.id;
+    el.innerHTML =
+      '<div class="news-feature__media"><img src="' + n.img + '" alt=""></div>' +
+      '<div class="news-feature__body">' +
+        '<span class="eyebrow">Destacada · ' + esc(n.cat) + '</span>' +
+        '<h3>' + esc(n.titulo) + '</h3>' +
+        '<p class="muted">' + esc(n.bajada) + '</p>' +
+        '<span class="news-card__date"><i class="fa-regular fa-calendar"></i>' + fmtDate(n.fecha) + '</span>' +
+        '<span class="link-arrow mt-2">Leer noticia completa <i class="fa-solid fa-arrow-right"></i></span>' +
+      '</div>';
+  });
   $$("[data-news]").forEach(function (el) {
     var n = parseInt(el.getAttribute("data-news"), 10) || 3;
-    var skip = parseInt(el.getAttribute("data-news-skip"), 10) || 0;
-    el.innerHTML = sorted.slice(skip, skip + n).map(newsCard).join("");
+    var list = el.hasAttribute("data-news-skip-featured") ? sorted.filter(function (x) { return x !== featured; }) : sorted;
+    el.innerHTML = list.slice(0, n).map(newsCard).join("");
   });
   $$("[data-phones]").forEach(function (el) {
     var mode = el.getAttribute("data-phones");
@@ -366,6 +380,7 @@
               '<h1>' + esc(n.titulo) + '</h1>' +
               '<p class="lead">' + esc(n.bajada) + '</p>' +
               n.cuerpo.map(function (p) { return "<p>" + esc(p) + "</p>"; }).join("") +
+              (n.fuente ? '<p class="muted" style="font-size:.88rem"><i class="fa-solid fa-link"></i> Fuente y fotografía: <a href="' + n.fuente.url + '" target="_blank" rel="noopener">' + esc(n.fuente.nombre) + '</a></p>' : "") +
               '<div class="share"><b>Compartir</b>' +
                 '<a href="https://wa.me/?text=' + encodeURIComponent(n.titulo + " " + url) + '" target="_blank" rel="noopener" aria-label="Compartir en WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>' +
                 '<a href="https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url) + '" target="_blank" rel="noopener" aria-label="Compartir en Facebook"><i class="fa-brands fa-facebook-f"></i></a>' +

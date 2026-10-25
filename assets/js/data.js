@@ -224,107 +224,106 @@ window.SITE = {
     }
   ],
 
-  /* Noticias. img: ruta local o null (muestra escudo). */
+  /* Noticias reales de la gestión (redactadas a partir de medios locales).
+     img: ruta local o null (muestra escudo). destacada: se muestra grande en la portada.
+     fuente: medio donde se publicó originalmente. */
   noticias: [
+    {
+      id: "nuevos-vehiculos-0km",
+      fecha: "2026-10-23",
+      cat: "Gestión",
+      destacada: true,
+      titulo: "La Municipalidad presentó nuevos vehículos 0 km con una inversión de más de $600 millones",
+      bajada: "Camión volcador, tanque atmosférico, camioneta, automóvil y motos se suman al parque automotor. La gestión proyecta llegar a $1.000 millones en reequipamiento este año.",
+      img: "assets/img/nuevos-vehiculos.jpg",
+      fuente: { nombre: "Paralelo 28", url: "https://www.paralelo28.com.ar/2026/10/23/las-toscas-la-municipalidad-invirtio-mas-de-600-millones-en-nuevos-vehiculos-y-proyecta-alcanzar-los-1-000-millones-en-equipamiento-municipal/" },
+      cuerpo: [
+        "Frente al Palacio Municipal se realizó la presentación oficial de las nuevas unidades 0 km que se incorporan al parque automotor de la Municipalidad: un camión con caja volcadora, un tanque atmosférico de arrastre, un automóvil, una camioneta y tres motocicletas.",
+        "La compra forma parte de una inversión superior a los $600 millones para fortalecer la capacidad operativa y mejorar los servicios públicos. Sumando la recuperación de maquinaria y las mejoras en el Corralón Municipal, la gestión proyecta alcanzar cerca de $1.000 millones en reequipamiento hacia fin de año.",
+        "El acto fue encabezado por el intendente Iván Sánchez junto al ministro de Gobierno e Innovación Pública de la Provincia, Fabián Bastía, con la presencia del senador Orfilio Marcón, la diputada provincial Charo Mancini y autoridades de la región. En la misma jornada se firmó el convenio del Programa Potenciar para adquirir una retroexcavadora 0 km."
+      ]
+    },
+    {
+      id: "precauciones-creciente",
+      fecha: "2026-10-24",
+      cat: "Prevención",
+      titulo: "Creciente y lluvias intensas: la Municipalidad pide extremar las precauciones",
+      bajada: "Ante el avance del agua por el fenómeno de El Niño, se recuerda que está prohibido bañarse en el arroyo y acercarse a las zonas inundadas.",
+      img: "assets/img/humedal-aereo.jpg",
+      fuente: { nombre: "Paralelo 28", url: "https://www.paralelo28.com.ar/2026/10/24/las-toscas-la-municipalidad-solicita-extremar-las-precauciones-ante-la-creciente-y-las-lluvias-intensas/" },
+      cuerpo: [
+        "Con el avance del agua en el marco del fenómeno de El Niño, la Municipalidad solicita a los vecinos reforzar las medidas de prevención para evitar situaciones de riesgo.",
+        "Está prohibido ingresar o bañarse en el arroyo y en otros cursos de agua mientras dure la creciente. Tampoco se debe recorrer a pie o en vehículo las zonas inundadas, aun cuando parezcan seguras.",
+        "Se pide especial cuidado con niñas, niños y adolescentes, que no deben acercarse al río ni al arroyo, y se solicita evitar transitar por los sectores afectados si no se está colaborando con las tareas de asistencia."
+      ]
+    },
+    {
+      id: "inversion-escuelas",
+      fecha: "2026-10-23",
+      cat: "Educación",
+      titulo: "Más de $120 millones invertidos en las escuelas de la ciudad durante 2026",
+      bajada: "Los fondos llegaron a establecimientos de todos los niveles. La Escuela Técnica Nº 363 sumó equipamiento para su sala “363 Streaming”.",
+      img: "assets/img/escuela-363.jpg",
+      fuente: { nombre: "Paralelo 28", url: "https://www.paralelo28.com.ar/2026/10/23/las-toscas-invirtio-mas-de-120-millones-en-las-escuelas-de-la-ciudad-durante-2026/" },
+      cuerpo: [
+        "A través del Fondo de Financiamiento Educativo, el FANI y el Fondo Provincial de Educación Técnica, la Municipalidad lleva destinados en 2026 más de $120 millones a instituciones educativas de distintos niveles.",
+        "En la Escuela de Educación Técnico Profesional Nº 363 “Norma Aquino” se realizó una jornada con entrega de aportes, la incorporación de equipamiento para la sala “363 Streaming” y la habilitación de un nuevo salón. La institución también recibió fondos para infraestructura y una Sala de Producción de Alimentos.",
+        "Por su parte, la Escuela Nº 6049 recibió más de $8,6 millones para mejorar su instalación eléctrica."
+      ]
+    },
+    {
+      id: "taller-autonomia-digital",
+      fecha: "2026-10-22",
+      cat: "Desarrollo Humano",
+      titulo: "Adultos mayores completaron el Taller de Autonomía Digital",
+      bajada: "La propuesta del Punto Violeta enseñó a usar el celular de forma práctica y segura para la vida cotidiana.",
+      img: "assets/img/taller-digital.jpg",
+      fuente: { nombre: "Paralelo 28", url: "https://www.paralelo28.com.ar/2026/10/22/las-toscas-finalizo-el-taller-de-autonomia-digital-para-adultos-mayores/" },
+      cuerpo: [
+        "Desde el Punto Violeta, a través del Área de Desarrollo Humano, finalizó el Taller de Autonomía Digital destinado a adultos mayores.",
+        "Durante los encuentros se trabajó la configuración básica del celular, la seguridad digital y el uso de aplicaciones útiles para comunicarse y resolver actividades cotidianas.",
+        "La iniciativa, a cargo de la licenciada en Educación Ayelén Broggi, busca fortalecer la autonomía, la confianza y la inclusión digital de los participantes."
+      ]
+    },
+    {
+      id: "iluminacion-cementerio",
+      fecha: "2026-10-21",
+      cat: "Obras",
+      titulo: "Nueva iluminación LED y vigilancia nocturna en el cementerio local",
+      bajada: "Se instalaron 50 reflectores LED, 12 postes y más de 500 metros de tendido eléctrico para prevenir hechos de vandalismo.",
+      img: "assets/img/cementerio-iluminacion.jpg",
+      fuente: { nombre: "Paralelo 28", url: "https://www.paralelo28.com.ar/2026/10/21/las-toscas-la-municipalidad-reforzo-la-iluminacion-y-la-seguridad-del-cementerio-local/" },
+      cuerpo: [
+        "La Municipalidad completó una intervención integral en el cementerio con la colocación de 50 reflectores LED, 12 postes y más de 500 metros de tendido eléctrico, que mejoran la visibilidad en todo el predio.",
+        "Además, se incorporó un sereno durante la noche y se avanza con otras acciones preventivas para resguardar las instalaciones, tras años de hechos de vandalismo.",
+        "El intendente Iván Sánchez destacó que el objetivo es garantizar mejores condiciones de seguridad y preservar un espacio de especial valor para las familias de la ciudad."
+      ]
+    },
     {
       id: "isla-del-medio-area-protegida",
       fecha: "2026-10-09",
       cat: "Turismo",
-      titulo: "La Municipalidad declaró a la Isla del Medio como Área Natural Protegida de Interés Ecológico y Turístico",
+      titulo: "La Isla del Medio fue declarada Área Natural Protegida de Interés Ecológico y Turístico",
       bajada: "A través de la Ordenanza Nº 026/2026, aprobada por el Concejo Municipal, se reconoce el valor ambiental y turístico de la isla.",
       img: "assets/img/isla-del-medio.jpg",
       cuerpo: [
         "La Municipalidad de Las Toscas, a través de la Subsecretaría de Turismo, impulsó la iniciativa que dio lugar a la Ordenanza Nº 026/2026, aprobada por el Concejo Municipal, mediante la cual se declara a la Isla del Medio como Área Natural Protegida de Interés Ecológico y Turístico.",
         "La medida busca preservar uno de los ambientes más representativos del humedal, en el marco del sitio Ramsar Jaaukanigás, y promover un uso responsable del lugar por parte de vecinos y visitantes.",
-        "Desde el municipio destacaron que la declaración permitirá planificar acciones de cuidado, educación ambiental y desarrollo del ecoturismo, poniendo en valor el patrimonio natural de la ciudad."
+        "La declaración permitirá planificar acciones de cuidado, educación ambiental y desarrollo del ecoturismo, poniendo en valor el patrimonio natural de la ciudad."
       ]
     },
     {
-      id: "nuevo-portal-autogestion",
-      fecha: "2026-09-22",
+      id: "asuncion-ivan-sanchez",
+      fecha: "2025-12-14",
       cat: "Gestión",
-      titulo: "Nuevo portal de Autogestión: trámites y pagos desde casa",
-      bajada: "Los vecinos pueden consultar su deuda, descargar boletas y pagar tasas de forma online.",
-      img: "assets/img/foto-2.jpg",
+      titulo: "Iván Sánchez asumió como intendente de Las Toscas",
+      bajada: "Con la Plaza “23 de Agosto” colmada de vecinos, asumió el nuevo intendente y juró el Gabinete Municipal para el período 2025–2029.",
+      img: "assets/img/asuncion-plaza.jpg",
+      fuente: { nombre: "Paralelo 28", url: "https://www.paralelo28.com.ar/2025/12/15/las-toscas-emotivo-acto-de-asuncion-de-ivan-sanchez-como-intendente/" },
       cuerpo: [
-        "La Municipalidad pone a disposición de los vecinos el portal de Autogestión, una herramienta que permite consultar el estado de cuenta, descargar boletas y realizar pagos sin necesidad de acercarse al Palacio Municipal.",
-        "El objetivo es simplificar los trámites, reducir tiempos de espera y ofrecer una atención más ágil y moderna.",
-        "Ante cualquier consulta, el personal de Mesa de Entradas acompaña a quienes necesiten ayuda para dar sus primeros pasos en la plataforma."
-      ]
-    },
-    {
-      id: "acto-aniversario",
-      fecha: "2026-08-23",
-      cat: "Comunidad",
-      titulo: "La ciudad celebró un nuevo aniversario con un acto en la Plaza 23 de Agosto",
-      bajada: "Autoridades, instituciones y vecinos participaron de la ceremonia oficial.",
-      img: "assets/img/foto-1.jpg",
-      cuerpo: [
-        "Con la presencia de autoridades municipales, instituciones educativas, fuerzas de seguridad y vecinos, se llevó adelante el acto oficial en la Plaza 23 de Agosto.",
-        "Durante la ceremonia se realizó el izamiento de la bandera, se entonaron las estrofas del Himno Nacional y se reconoció a vecinos e instituciones por su aporte a la comunidad.",
-        "La jornada continuó con actividades culturales y propuestas para toda la familia."
-      ]
-    },
-    {
-      id: "plan-obras-2026",
-      fecha: "2026-07-15",
-      cat: "Obras",
-      titulo: "Avanza el plan de obras: iluminación LED y mejorado de calles",
-      bajada: "Los trabajos se concentran en barrios priorizados por su necesidad de infraestructura.",
-      img: null,
-      cuerpo: [
-        "La Secretaría de Planificación y Desarrollo Territorial continúa con el plan de obras previsto para este año, que incluye el recambio de luminarias por tecnología LED y el mejorado de calles de tierra.",
-        "Las tareas se organizan por etapas para minimizar las molestias a los vecinos y se informan con anticipación a través de los canales oficiales.",
-        "Se solicita a los vecinos respetar la señalización en las zonas de trabajo."
-      ]
-    },
-    {
-      id: "escuelas-deportivas-inscripcion",
-      fecha: "2026-06-30",
-      cat: "Deportes",
-      titulo: "Abren las inscripciones a las escuelas deportivas municipales",
-      bajada: "Fútbol, vóley, atletismo y actividades recreativas para niños, jóvenes y adultos mayores.",
-      img: null,
-      cuerpo: [
-        "La Secretaría de Recreación y Deporte informa que se encuentran abiertas las inscripciones a las escuelas deportivas municipales.",
-        "Las actividades son gratuitas y se desarrollan en el polideportivo y espacios públicos de la ciudad.",
-        "Para inscribirse es necesario presentar DNI y apto físico."
-      ]
-    },
-    {
-      id: "operativo-salud",
-      fecha: "2026-06-12",
-      cat: "Salud",
-      titulo: "Operativo de salud en los barrios: vacunación y controles",
-      bajada: "Desarrollo Humano acerca controles y vacunación a cada barrio de la ciudad.",
-      img: null,
-      cuerpo: [
-        "La Secretaría de Desarrollo Humano, junto a efectores de salud, realiza operativos barriales con controles de salud, actualización del calendario de vacunación y asesoramiento.",
-        "El cronograma se publica semanalmente en las redes oficiales del municipio."
-      ]
-    },
-    {
-      id: "emprendedores-feria",
-      fecha: "2026-05-18",
-      cat: "Producción",
-      titulo: "Feria de emprendedores locales: una vidriera para la producción toscanense",
-      bajada: "Más de treinta emprendedores participaron de la propuesta impulsada por Desarrollo Productivo.",
-      img: null,
-      cuerpo: [
-        "La Secretaría de Desarrollo Productivo organizó una nueva edición de la feria de emprendedores, con propuestas de gastronomía, artesanías, indumentaria y servicios.",
-        "La iniciativa busca fortalecer la economía local y generar espacios de comercialización para los productores de la ciudad."
-      ]
-    },
-    {
-      id: "balance-primer-trimestre",
-      fecha: "2026-04-25",
-      cat: "Gestión",
-      titulo: "Se publicó el balance del primer trimestre en Gobierno Abierto",
-      bajada: "El documento puede consultarse y descargarse en la sección Transparencia.",
-      img: null,
-      cuerpo: [
-        "En el marco de la política de transparencia, la Municipalidad publicó el balance correspondiente al primer trimestre del año.",
-        "El documento se encuentra disponible para su descarga en la sección Transparencia del sitio oficial."
+        "En un acto realizado en la Plaza “23 de Agosto”, con gran presencia de vecinos, instituciones y autoridades de toda la región, Iván Sánchez asumió como intendente de Las Toscas para el período 2025–2029.",
+        "Tras la entonación del Himno Nacional, se leyó el acta de juramento y se realizó la entrega simbólica de la llave de la Municipalidad. Luego, el intendente tomó juramento a los secretarios, subsecretarios y directores que integran el Gabinete Municipal.",
+        "Participaron, entre otras autoridades, la presidenta de la Cámara de Diputadas y Diputados de Santa Fe, Clara García; el diputado nacional Pablo Farías; el senador departamental Orfilio Marcón y los diputados provinciales Charo Mancini y Sergio Rojas."
       ]
     }
   ],
