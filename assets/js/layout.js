@@ -47,6 +47,7 @@
         '<button type="button" data-font="-1" aria-label="Reducir tamaño de texto" title="Reducir texto">A-</button>' +
         '<button type="button" data-font="1" aria-label="Aumentar tamaño de texto" title="Aumentar texto">A+</button>' +
         '<button type="button" id="contrastToggle" aria-pressed="false" aria-label="Alto contraste" title="Alto contraste"><i class="fa-solid fa-circle-half-stroke"></i></button>' +
+        '<button type="button" id="themeToggle" aria-pressed="false" aria-label="Activar modo oscuro" title="Modo oscuro"><i class="fa-solid fa-moon"></i></button>' +
         '<span class="topbar__sep" aria-hidden="true"></span>' +
         socials +
       '</div>' +

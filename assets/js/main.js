@@ -52,14 +52,35 @@
       });
     });
     var btn = $("#contrastToggle");
+    var themeBtn = $("#themeToggle");
+    var themeMeta = $('meta[name="theme-color"]');
     function setContrast(on) {
       root.classList.toggle("high-contrast", on);
       if (btn) btn.setAttribute("aria-pressed", on ? "true" : "false");
     }
+    // Modo oscuro: el <head> ya aplica la clase antes de pintar (evita parpadeo).
+    // Alto contraste y modo oscuro son excluyentes.
+    function setDark(on) {
+      root.classList.toggle("dark-mode", on);
+      if (themeMeta) themeMeta.setAttribute("content", on ? "#061423" : "#0b2a4a");
+      if (themeBtn) {
+        themeBtn.setAttribute("aria-pressed", on ? "true" : "false");
+        themeBtn.setAttribute("aria-label", on ? "Desactivar modo oscuro" : "Activar modo oscuro");
+        themeBtn.setAttribute("title", on ? "Modo claro" : "Modo oscuro");
+        themeBtn.innerHTML = '<i class="fa-solid ' + (on ? "fa-sun" : "fa-moon") + '"></i>';
+      }
+    }
     setContrast(store("lt-contrast") === "1");
+    setDark(root.classList.contains("dark-mode") && !root.classList.contains("high-contrast"));
     if (btn) btn.addEventListener("click", function () {
       var on = !root.classList.contains("high-contrast");
       setContrast(on); store("lt-contrast", on ? "1" : "0");
+      if (on && root.classList.contains("dark-mode")) { setDark(false); store("lt-theme", "light"); }
+    });
+    if (themeBtn) themeBtn.addEventListener("click", function () {
+      var on = !root.classList.contains("dark-mode");
+      setDark(on); store("lt-theme", on ? "dark" : "light");
+      if (on && root.classList.contains("high-contrast")) { setContrast(false); store("lt-contrast", "0"); }
     });
   })();
 
