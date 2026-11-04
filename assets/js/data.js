@@ -229,10 +229,91 @@ window.SITE = {
      fuente: medio donde se publicó originalmente. */
   noticias: [
     {
+      id: "monitoreo-hidrico-prevencion",
+      fecha: "2026-11-02",
+      cat: "Gestión",
+      destacada: true,
+      titulo: "Más de 500 metros de defensas y bombeo permanente: el Municipio refuerza la prevención ante la creciente",
+      bajada: "Con monitoreo diario del arroyo y del río Paraná, la Municipalidad ya distribuyó más de 400 bolsas de arena, 140 camiones de tierra y realizó cerca de 200 asistencias sociales.",
+      img: "assets/img/monitoreo-hidrico.jpg",
+      cuerpo: [
+        "La Municipalidad de Las Toscas mantiene un monitoreo permanente del río Paraná y del arroyo Las Toscas, que se recorre entre dos y tres veces por día, y sigue de cerca los pronósticos ante la posibilidad de lluvias intensas en la cuenca oeste.",
+        "En materia de obras preventivas se levantaron más de 500 metros de defensas sobre calles 1 y 20 y en distintos puntos del arroyo. Además se intervinieron más de diez entubados, se abrieron más de 1.500 metros de cunetas en barrio San Felipe y unos 2.000 metros de canales en Campo Winkler, y se repararon más de cinco kilómetros de caminos rurales y calles urbanas.",
+        "Dos estaciones de bombeo instaladas en calles 9 y 20, con una capacidad conjunta de cinco millones de litros por hora, funcionaron alrededor de 25 horas durante la última semana. Junto a la EPE se sumó un puesto de transformación de 160 kVA, una nueva línea de baja tensión y la iluminación del sector.",
+        "En el plano social, el Municipio entregó tierra, bolsas de arena y tarimas a 60 familias para resguardar sus viviendas, acompañó traslados preventivos y realizó cerca de 200 asistencias. El Ministerio de Salud provincial aportó una ambulancia 4x4 para zonas de difícil acceso, cuyo personal es sostenido por la Municipalidad.",
+        "El trabajo se articula con la Secretaría de Protección Civil y otras áreas del Gobierno de Santa Fe, cuyas autoridades recorrieron la ciudad en los últimos días."
+      ]
+    },
+    {
+      id: "cierre-curso-lengua-de-senas",
+      fecha: "2026-11-02",
+      cat: "Desarrollo Humano",
+      titulo: "Cerró el curso de Lengua de Señas Argentina con entrega de certificados",
+      bajada: "La propuesta de la Secretaría de Desarrollo Humano y la Asociación Civil “Manos que Hablan” busca derribar barreras de comunicación en la ciudad.",
+      img: "assets/img/lengua-de-senas.jpg",
+      cuerpo: [
+        "La Municipalidad de Las Toscas, a través de la Secretaría de Desarrollo Humano, acompañó el cierre del curso de Lengua de Señas Argentina organizado junto a la Asociación Civil “Manos que Hablan”.",
+        "La jornada incluyó el examen final y la entrega de certificaciones institucionales, que se suman al certificado ministerial que obtienen quienes completan la formación.",
+        "Desde el Municipio destacaron que la iniciativa promueve la inclusión y la igualdad de oportunidades, y que abrir espacios de capacitación y sensibilización permite construir una comunidad donde todas las personas puedan comunicarse sin barreras."
+      ]
+    },
+    {
+      id: "congreso-ecoturismo-jaaukanigas",
+      fecha: "2026-10-31",
+      cat: "Turismo",
+      titulo: "Las Toscas será sede del 1° Congreso de Ecoturismo en Jaaukanigás",
+      bajada: "El 26 y 27 de noviembre habrá conferencias con referentes del Litoral y una jornada de campo con navegación y gastronomía en el humedal. La inscripción ya está abierta.",
+      img: "assets/img/congreso-ecoturismo.jpg",
+      cuerpo: [
+        "La Municipalidad de Las Toscas organiza el 1° Congreso de Ecoturismo en Jaaukanigás, que se realizará el 26 y 27 de noviembre con el objetivo de poner en valor uno de los humedales más importantes del país y potenciar el turismo de naturaleza en la región.",
+        "La primera jornada estará dedicada a conferencias de especialistas y referentes del ecoturismo del Litoral argentino, junto con experiencias regionales que combinan desarrollo turístico y conservación.",
+        "El segundo día propone una salida de campo con actividades de interpretación de la naturaleza y del patrimonio, navegación por el sitio Ramsar y una propuesta gastronómica en el entorno del humedal.",
+        "El congreso está pensado para prestadores turísticos, emprendedores, artesanos, instituciones, docentes, estudiantes y público en general. La inscripción se realiza mediante un formulario en línea difundido por los canales oficiales del Municipio."
+      ]
+    },
+    {
+      id: "voluntariado-emergencia",
+      fecha: "2026-10-29",
+      cat: "Prevención",
+      titulo: "Abrió la inscripción al Voluntariado municipal para colaborar ante la emergencia",
+      bajada: "La Junta de Protección Civil, junto a Cáritas e instituciones religiosas, organiza a los vecinos que quieran ayudar. Ya hay más de 50 inscriptos.",
+      img: "assets/img/voluntariado-emergencia.jpg",
+      cuerpo: [
+        "La Municipalidad de Las Toscas abrió la inscripción al Voluntariado para colaborar en las tareas de prevención y asistencia vinculadas a la creciente. La iniciativa es coordinada por la Junta de Protección Civil Municipal junto a Cáritas y las instituciones religiosas de la ciudad, en el marco de la Ordenanza N.º 028/2026.",
+        "Quienes quieran sumarse pueden completar el formulario en línea disponible en el perfil de Instagram de la Municipalidad. Las tareas se asignan según las necesidades operativas y siempre de manera coordinada con los responsables de Protección Civil: la inscripción no habilita por sí sola a intervenir en las zonas afectadas.",
+        "En pocos días ya se anotaron más de 50 vecinos. Además, la Oficina de Empleo recibe donaciones de lunes a viernes, de 7 a 13 y de 15 a 19: alimentos no perecederos, colchones, frazadas, ropa, calzado y artículos de higiene y limpieza."
+      ]
+    },
+    {
+      id: "campania-lluvias-residuos",
+      fecha: "2026-10-29",
+      cat: "Ambiente",
+      titulo: "“Lo cotidiano también construye una ciudad que no se inunda”: nueva campaña de concientización",
+      bajada: "La Municipalidad pide sacar los residuos en el horario de recolección y guardarlos cuando se anuncian tormentas, para que no tapen los desagües.",
+      img: "assets/img/campania-lluvias.jpg",
+      cuerpo: [
+        "La Municipalidad de Las Toscas lanzó una campaña de concientización para prevenir anegamientos durante la temporada de lluvias, bajo el lema “Lo cotidiano también construye una ciudad que no se inunda”.",
+        "El pedido a los vecinos es simple: depositar los residuos en los lugares indicados y respetar los horarios de recolección. Si se pronostican tormentas, se recomienda guardar la basura en el domicilio hasta el próximo día de recolección.",
+        "Una bolsa en la calle puede ser arrastrada por el agua y tapar los desagües, lo que dificulta el escurrimiento. Por eso, el Municipio remarca que mantener limpios canales y desagües es una tarea compartida entre el trabajo municipal y el compromiso de cada familia."
+      ]
+    },
+    {
+      id: "prevencion-dengue",
+      fecha: "2026-10-28",
+      cat: "Salud",
+      titulo: "El Municipio refuerza la prevención del dengue ante la temporada de lluvias",
+      bajada: "La campaña invita a eliminar recipientes que acumulen agua y recuerda quiénes pueden vacunarse en los centros de salud.",
+      img: "assets/img/prevencion-dengue.jpg",
+      cuerpo: [
+        "Ante las lluvias y crecidas previstas por el fenómeno de El Niño, la Municipalidad de Las Toscas puso en marcha una campaña de prevención del dengue que apuesta a la participación de toda la comunidad.",
+        "Las recomendaciones son mantener limpios los patios y alrededores de las viviendas, eliminar o dar vuelta los objetos que puedan juntar agua y revisar con frecuencia los espacios comunes.",
+        "También se recuerda la importancia de la vacunación. En Santa Fe está destinada a grupos priorizados, entre ellos jóvenes de 15 a 19 años de zonas definidas, personas de 15 a 59 años que ya tuvieron dengue y trabajadores de salud, seguridad y equipos territoriales. En los centros de salud de la ciudad se puede consultar si corresponde aplicarla."
+      ]
+    },
+    {
       id: "nuevos-vehiculos-0km",
       fecha: "2026-10-23",
       cat: "Gestión",
-      destacada: true,
       titulo: "La Municipalidad presentó nuevos vehículos 0 km con una inversión de más de $600 millones",
       bajada: "Camión volcador, tanque atmosférico, camioneta, automóvil y motos se suman al parque automotor. La gestión proyecta llegar a $1.000 millones en reequipamiento este año.",
       img: "assets/img/nuevos-vehiculos.jpg",
