@@ -15,8 +15,8 @@ window.SITE = {
     autogestion: "https://grossomaximiliano.github.io/MUNI_POC",
     cursos: "https://grossomaximiliano.github.io/MUNI_CURSOS/",
     empleo: "https://grossomaximiliano.github.io/MUNI_EMPLE/",
-    mapa: "https://www.google.com/maps?q=Calle+12+901,+Las+Toscas,+Santa+Fe,+Argentina&output=embed",
-    mapaLink: "https://www.google.com/maps/search/?api=1&query=Municipalidad+de+Las+Toscas+Santa+Fe",
+    mapa: "https://www.google.com/maps?q=-28.354166,-59.257671&z=17&output=embed",
+    mapaLink: "https://www.google.com/maps/search/?api=1&query=-28.354166,-59.257671",
     redes: {
       facebook: "#",
       instagram: "#",

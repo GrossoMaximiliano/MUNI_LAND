@@ -428,21 +428,71 @@ button.chip { cursor: pointer; }
 .team-card p { font-size: .92rem; color: var(--ink-500); flex: 1; }
 .team-card__mail { display: inline-flex; align-items: center; gap: 8px; font-size: .86rem; font-weight: 600; word-break: break-all; }
 
-.org { display: flex; flex-direction: column; align-items: center; gap: 0; }
-.org__node { background: var(--navy-800); color: #fff; padding: 14px 22px; border-radius: 12px; text-align: center; font-family: var(--font-head); font-weight: 700; box-shadow: var(--shadow); }
-.org__node small { display: block; font-family: var(--font-body); font-weight: 500; font-size: .78rem; color: #b9cbe0; }
-.org__node--gold { background: var(--gold-500); color: var(--navy-900); }
-.org__node--gold small { color: var(--navy-700); }
-.org__line { width: 2px; height: 28px; background: var(--ink-300); }
-.org__row { position: relative; display: grid; grid-template-columns: 1fr; gap: 12px; width: 100%; padding-top: 0; }
-.org__row .org__node { background: var(--surface); color: var(--navy-800); border: 1px solid var(--line); box-shadow: var(--shadow-sm); font-size: .9rem; }
-.org__row .org__node small { color: var(--ink-500); }
-@media (min-width: 700px) { .org__row { grid-template-columns: repeat(3, 1fr); } }
+/* Organigrama: intendencia arriba y secretarías debajo (lista en celular, panel en tablet, árbol en PC) */
+.org { --org-line: var(--ink-300); --org-gap: 32px; display: flex; flex-direction: column; align-items: center; }
+.org__head {
+  position: relative; display: flex; align-items: center; gap: 16px; padding: 18px 26px 18px 18px;
+  background: linear-gradient(135deg, var(--navy-800), var(--navy-700)); color: #fff;
+  border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); border-top: 4px solid var(--gold-500); text-align: left;
+}
+.org__head-icon {
+  flex: none; display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%;
+  background: var(--gold-500); color: var(--navy-900); font-size: 1.4rem; box-shadow: 0 0 0 5px rgba(201, 162, 39, .22);
+}
+.org__kicker { display: block; font-size: .68rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-500); }
+.org__head strong { display: block; font-family: var(--font-head); font-size: 1.25rem; line-height: 1.2; color: #fff; }
+.org__head small { display: block; font-size: .86rem; color: #c9d7e8; }
+.org__line { width: 2px; height: var(--org-gap); background: linear-gradient(var(--gold-500), var(--org-line)); }
+.org__row { position: relative; display: grid; grid-template-columns: 1fr; gap: 12px; width: 100%; max-width: 560px; padding-left: 30px; }
+.org__row::before { content: ""; position: absolute; left: 11px; top: -2px; bottom: 34px; width: 2px; background: var(--org-line); border-radius: 2px; }
+.org__node {
+  position: relative; display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto auto; column-gap: 14px; align-items: center;
+  padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow-sm); color: var(--ink-700); text-align: left;
+  transition: transform .25s var(--ease), box-shadow .25s var(--ease), border-color .25s var(--ease);
+}
+.org__node::before { content: ""; position: absolute; left: -19px; top: 50%; width: 19px; height: 2px; background: var(--org-line); }
+.org__node::after { content: ""; position: absolute; left: -23px; top: calc(50% - 4px); width: 10px; height: 10px; border-radius: 50%; background: var(--blue-600); box-shadow: 0 0 0 3px var(--bg); }
+.org__node:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--blue-600); }
+.org__icon {
+  grid-row: 1 / span 3; display: grid; place-items: center; width: 46px; height: 46px; border-radius: 14px;
+  background: var(--sky-100); color: var(--blue-600); font-size: 1.1rem;
+}
+.org__area { font-family: var(--font-head); font-weight: 700; font-size: .92rem; line-height: 1.25; color: var(--heading); }
+.org__name { font-size: .86rem; font-weight: 600; color: var(--ink-700); margin-top: 2px; }
+.org__role { font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-500); margin-top: 1px; }
+@media (max-width: 699px) {
+  .org { align-items: stretch; }
+  .org__line { margin-left: 11px; }
+  .org__row { max-width: none; }
+}
+html.dark-mode .org { --org-line: #3a5070; }
+html.dark-mode .org__head { background: linear-gradient(135deg, #16365c, #0f2742); }
+html.dark-mode .org__icon { color: var(--sky-400); }
+html.dark-mode .org__node:hover { border-color: var(--sky-400); }
+
+@media (min-width: 700px) {
+  .org__row {
+    grid-template-columns: repeat(4, 1fr); max-width: none; padding: 22px; gap: 14px;
+    border: 1px dashed var(--org-line); border-radius: var(--radius-lg); background: color-mix(in srgb, var(--surface) 55%, transparent);
+  }
+  .org__row::before { display: none; }
+  .org__node { grid-template-columns: 1fr; grid-template-rows: none; justify-items: center; text-align: center; padding: 20px 12px 16px; }
+  .org__node::before { display: none; }
+  .org__node::after { left: 0; right: 0; top: 0; width: auto; height: 3px; border-radius: var(--radius) var(--radius) 0 0; box-shadow: none; background: linear-gradient(90deg, var(--blue-600), var(--sky-400)); opacity: 0; transition: opacity .25s; }
+  .org__node:hover::after { opacity: 1; }
+  .org__icon { grid-row: auto; margin-bottom: 10px; width: 50px; height: 50px; border-radius: 50%; }
+  .org__area { min-height: 2.5em; display: flex; align-items: center; }
+  /* 4 + 3: la segunda fila queda centrada */
+  .org__node:nth-child(n+5) { margin-left: 50%; margin-right: -50%; }
+}
 @media (min-width: 1100px) {
-  .org__row { grid-template-columns: repeat(7, 1fr); gap: 10px; padding-top: 28px; }
-  .org__row::before { content: ""; position: absolute; top: 0; left: calc(100% / 14); right: calc(100% / 14); height: 2px; background: var(--ink-300); }
-  .org__row .org__node { position: relative; padding: 14px 10px; font-size: .82rem; }
-  .org__row .org__node::before { content: ""; position: absolute; top: -28px; left: 50%; width: 2px; height: 28px; background: var(--ink-300); }
+  .org__row { grid-template-columns: repeat(7, 1fr); gap: 12px; padding: var(--org-gap) 0 0; border: 0; border-radius: 0; background: none; }
+  .org__row::before { display: block; left: calc(100% / 14); right: calc(100% / 14); top: 0; bottom: auto; width: auto; height: 2px; }
+  .org__node:nth-child(n) { margin: 0; }
+  .org__node::before { display: block; left: 50%; top: calc(var(--org-gap) * -1); width: 2px; height: var(--org-gap); }
+  .org__area { font-size: .84rem; }
+  .org__name { font-size: .82rem; }
 }
 
 /* ---------- 10. Trámites ---------- */

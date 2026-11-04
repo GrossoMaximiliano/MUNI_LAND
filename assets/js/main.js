@@ -181,7 +181,11 @@
   $$("[data-gabinete]").forEach(function (el) { el.innerHTML = S.gabinete.map(teamCard).join(""); });
   $$("[data-org]").forEach(function (el) {
     el.innerHTML = S.gabinete.map(function (g) {
-      return '<div class="org__node">' + esc(g.area) + '<small>' + esc(g.nombre) + '</small></div>';
+      return '<div class="org__node">' +
+        '<span class="org__icon" aria-hidden="true"><i class="fa-solid ' + g.icono + '"></i></span>' +
+        '<span class="org__area">' + esc(g.area) + '</span>' +
+        '<span class="org__name">' + esc(g.nombre) + '</span>' +
+        '<span class="org__role">' + esc(g.cargo) + '</span></div>';
     }).join("");
   });
   $$("[data-directorio]").forEach(function (el) {
