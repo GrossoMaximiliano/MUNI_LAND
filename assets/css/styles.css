@@ -130,7 +130,7 @@ ul, ol { margin: 0; padding: 0; }
 .topbar .container { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 40px; }
 .topbar__info { display: flex; gap: 20px; align-items: center; }
 .topbar__info span, .topbar__info a { display: inline-flex; align-items: center; gap: 7px; color: #b9cbe0; white-space: nowrap; }
-@media (max-width: 399px) { .topbar__tools a { display: none; } .topbar__sep { display: none; } }
+@media (max-width: 399px) { .topbar .topbar__tools a { display: none; } .topbar__sep { display: none; } }
 .topbar__info a:hover { color: #fff; }
 .topbar__info .hide-sm { display: none; }
 .topbar__tools { display: flex; align-items: center; gap: 6px; }
